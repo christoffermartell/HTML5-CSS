@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html
+<head>
+<title> Employee Analysis </Title>    
+<style>body {
+    background-color: white;
+    text-align: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    .vertical-menu {
+      width: 280px;
+      height: 150px;
+      overflow-y: auto;
+    }
+    .vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+  padding: 12px;
+    text-decoration: none;
+    }
+    .vertical-menu a :hover {
+    scroll-behavior: smooth;
+    background-color: black
+    }
+    .vertical-menu a.active {
+    background-color: #b67020;
+    color: rgb(255, 255, 255);
+}
+  </style>
+</head>
+<body>
+    <h1 style="width: 20%; border: 3px solid blue;">Analysis of the month!</h1>
+    <h5><i>This is our monthy employee analysis, please enter follwing:</i></h5>
+    <form>
+      <label><strong>Enter your name please</label></strong><br>
+           <input type width 35="text" name="name" maxlength="20"><br><br><br><br>
+      <label> <i>Are you currentley active in any sportsmanship activity?</i></label><br>
+      <input type="radio" name="activity" value="yes"> Yes<br>
+      <input type="radio" name="activity" value="no"> No<br><br><br><br><br>
+      <label><strong><i>In what type of way do you like to read about your own intrests?</i></strong></label><br>
+      <input type="checkbox" id="read" object="book" value="book">
+      <label for="vehicle1"> book</label><br>
+      <input type="checkbox" id="read" object="newspaper" value="newspaper">
+      <label for="vehicle2"> newspaper</label><br>
+      <input type="checkbox" id="read" object="online" value="online">
+      <label for="vehicle3"> online</label><br><br><br><br><br><br>
+      
+      <label for="yourtext"><strong>Please tell us something about yourself</strong> </label><br>
+    <textarea id="yourtext" name="yourtext" rows="4" cols="30" style="background-color: blue;">
+          Type here
+  </textarea>
+  <br><br><br><br><br><br>
+
+  <label for="Genre">Choose your favorite genre:</label>
+  <select name="Genre" id="Genre">
+    <option value="Choose">select</option>
+    <option value="Action" style="background-color: burlywood;">Action</option>
+    <option value="Romance" style="background-color: crimson;">Romance</option>
+    <option value="Comedy" style="background-color: darkgrey;">Comedy</option>
+    <option value="Drama" style="background-color: darkorange;">Drama</option>
+    <option value="Horror" style="background-color: darkslategray;">Horror</option>
+  </select>
+
+
+    </form>
+    <br><br><br><br><br>
+    <div class="vertical-menu">
+      <a href="#" class="active">Employee of the month(previously month)</a>
+      <a href="#">Daisy</a>
+      <a href="#">John</a>
+      <a href="#">Mia</a>
+      <a href="#">Andrew</a>
+      <a href="#">Michael</a>
+      <a href="#">Helen</a>
+      
+
+   </div>
+<br><br><br><br><br>
+<h5><strong>Please press the button to finnish analysis</strong></h5>
+   <input type="submit" value="Submit" style="background-color: rgb(140, 140, 250);">
+
+</body>
+</html>
